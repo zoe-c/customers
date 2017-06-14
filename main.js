@@ -41,12 +41,11 @@ console.log("test");
                      <li><img src="${customer.picture.large}" alt="customer-photo"></li>
                      <li class= "customer-name">${customer.name.first} ${customer.name.last}</li>
                      <li class= "customer-email">${customer.email}</li>
-                     <br>
                      <li class= "address">
                        <p>${customer.location.street}</p>
                        <p>${customer.location.city} , ${customer.location.state} ${customer.location.postcode}</p>
                     </li>
-                    <li>${customer.phone}</li>
+                    <li class= "phone">${customer.phone}</li>
                  </ul>`
                ).join('')}
             </div>

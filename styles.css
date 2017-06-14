@@ -40,6 +40,7 @@ ul {
    list-style-type: none;
    text-align: center;
    line-height: 1.5;
+   margin-bottom: 2vw;
 }
 
 img {
@@ -64,7 +65,10 @@ img {
    font-weight: lighter;
 }
 
-.address {
+.address, .phone {
    font-weight: lighter;
    text-transform: capitalize;
+   font-size: 75%;
+   font-color: darkgray;
+
 }

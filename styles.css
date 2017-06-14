@@ -1,0 +1,46 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+   width: 100vw;
+   height: 100vh;
+}
+
+body {
+   font-family: sans-serif;
+}
+
+.title {
+   width: 100vw;
+   height: 10vw;
+   text-align: center;
+   font-weight:bold;
+   font-size: 3.5vw;
+}
+
+.customers {
+   width: 100vw;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+}
+
+ul {
+   list-style-type: none;
+   border: solid 1px black;
+}
+
+.customer-name, .customer-email {
+   text-transform: uppercase;
+}

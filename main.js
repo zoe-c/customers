@@ -35,31 +35,29 @@ console.log("test");
             // let customer = customers[0];
             // for (i = 0; i <= customers.length-1; i++) {
             return `
-            <div>
+            <div class= "customers">
               ${customers.map(customer =>
-                 `<img src="${customer.picture.large}" alt="customer-photo">
-                 <div>
-                    <p>${customer.name.first} ${customer.name.last}</p>
-                 <div>${customer.email}</div>
-                 <br>
-                 <div>
-                    <p>${customer.location.street}</p>
-                    <p>${customer.location.city} , ${customer.location.state} ${customer.location.postcode}</p>
-                 </div>
-                 <div>${customer.phone}</div>`
+                  `<ul>
+                     <li><img src="${customer.picture.large}" alt="customer-photo"></li>
+                     <li class= "customer-name">${customer.name.first} ${customer.name.last}</li>
+                     <li class= "customer-email">${customer.email}</li>
+                     <br>
+                     <li class= "address">
+                       <p>${customer.location.street}</p>
+                       <p>${customer.location.city} , ${customer.location.state} ${customer.location.postcode}</p>
+                    </li>
+                    <li>${customer.phone}</li>
+                 </ul>`
                ).join('')}
-            <div>
+            </div>
             `;
          }
          console.log(renderCustomers());
 
          let markup = `
-           <div class= "title"> INTERNAL COMPANY DIRECTORY </div>
-           <div class= "customers">
-           ${renderCustomers()}
-           </div>
-         `
-
+              <div class= "title"> INTERNAL COMPANY DIRECTORY </div>
+               ${renderCustomers()}
+              `
          document.body.innerHTML = markup;
 
       });

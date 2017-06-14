@@ -14,7 +14,7 @@
 
 html {
    width: 100vw;
-   height: 100vh;
+   /*height: 100vh;*/
 }
 
 body {
@@ -31,15 +31,17 @@ body {
 
 .customers {
    width: 100vw;
-   height: 100%;
+   /*height: 100%;*/
    display: grid;
    grid-template-columns: 25% 25% 25% 25%;
 }
 
 ul {
    list-style-type: none;
+   text-align: center;
    border: solid 1px black;
 }
+
 
 .customer-name, .customer-email {
    text-transform: uppercase;

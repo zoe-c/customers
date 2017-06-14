@@ -25,14 +25,13 @@ body {
    width: 100vw;
    height: 10vw;
    text-align: center;
-   padding-top: 1em;
+   padding: 1em 0;
    font-weight:bold;
-   font-size: 3.5vw;
+   font-size: 3vw;
 }
 
 .customers {
    width: 100vw;
-   /*height: 100%;*/
    display: grid;
    grid-template-columns: 25% 25% 25% 25%;
 }
@@ -40,8 +39,7 @@ body {
 ul {
    list-style-type: none;
    text-align: center;
-   /*border: solid 1px black;*/
-   /*margins: calc(5px);*/
+   line-height: 1.5;
 }
 
 img {
@@ -49,7 +47,24 @@ img {
    height: 23vw;
 }
 
-
 .customer-name, .customer-email {
    text-transform: uppercase;
+}
+
+.customer-name {
+   font-weight: bold;
+   text-decoration: underline;
+   text-decoration-style: solid;
+   tex-decoration-color: green;
+}
+
+.customer-email {
+   color: grey;
+   font-size: 75%;
+   font-weight: lighter;
+}
+
+.address {
+   font-weight: lighter;
+   text-transform: capitalize;
 }
